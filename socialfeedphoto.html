@@ -35,9 +35,41 @@
     <p> <img src="images/dp2.jpg" class="img-circle"style="width:30px;height:30px; float:left;margin-top:7px;"><p style="float:left;margin-top:3px;color:orange; "> &nbsp;&nbsp;@Justin Isiderio</b></p>
     <div style="margin-left:10px;margin-right:10px;margin-top:100px;">
      <textarea class="form-control" rows="4" style="width:350px;border: 0;
-    box-shadow: none;"placeholder="What's on your mind?"></textarea><Br>
+    box-shadow: none;"placeholder="Say something about this photo"></textarea><Br>
+
+<script type="text/javascript">
+function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+</script>
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+</style>
+</head>
+<body>
+  
+  <div class="container">
+  <center><span class="btn btn-default btn-file" style="background:url(images/imgthumb.png);width:200px;height:150px; ">
+  <input type='file' onchange="readURL(this);" />
+  <br>
+  
+    <img id="blah" src="#"  /></span>
+
      <hr style="margin-top:35px;">
-      <a href="socialfeedcontent.html"type="button"class="btn btn-warning " style="margin-top:-10px;margin-left:280px;"><b>Post Status </b></a>
+      <a href="socialfeedcontent.html"type="button"class="btn btn-warning " style="margin-top:-10px;margin-left:280px;"><b>Post Photo </b></a>
        
     
       </div>
