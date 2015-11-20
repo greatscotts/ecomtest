@@ -38,18 +38,31 @@ function readURL(input) {
   <div class="container">
   <center><span class="btn btn-default btn-file" style="background:url(images/imgthumb.png);width:200px;height:150px; ">
   <input type='file' onchange="readURL(this);" />
+  <br>
+  
     <img id="blah" src="#"  /></span>
 <br><br>
-    <input type="text" class="form-control" placeholder="What are you selling?" style="width:350px;"><br>
+    <input type="text" class="form-control" placeholder="Title" style="width:350px;color:black"><br>
+      <textarea class="form-control" rows="3" style="width:350px;"placeholder="Description"></textarea><Br>
+    <input type="text" class="form-control" placeholder="Price" style="width:350px;"><br>
    <select class="form-control" style="width:350px;"placeholder="Select category">
+    <option>Select Category</option>
   <option>Clothes</option>
   <option>Shoes</option>
   <option>Accessories</option>
   <option>Service</option>
  
 </select><br>
-    <textarea class="form-control" rows="3" style="width:350px;"placeholder="Description"></textarea><Br>
-    <input type="text" class="form-control" placeholder="Price" style="width:350px;"><br>
+  
+
+     <select class="form-control" style="width:350px;"placeholder="Select category">
+    <option>Select Payment Option</option>
+  <option>Meetup</option>
+  <option>Shipping</option>
+  <option>Bank Payment</option>
+  <option>All of the above</option>
+ 
+</select><br>
    
   <a class="btn btn-warning btn-lg" href="#" role="button">Sell your item now</a>
 </body>
